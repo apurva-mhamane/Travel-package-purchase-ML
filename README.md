@@ -17,3 +17,4 @@ Which segment of customers should be targeted more.
 * ```pip install -r requirements.txt``` And finally run the project with ```python app.py```.
 * Open the localhost url provided after running app.py and now you can use the project locally in your web browser or put ```http://127.0.0.1:8080``` which is your local host.
 
+❗❗❗When downloaded there will be a zip inside the zip, so extract only inside's zip ❗❗❗
