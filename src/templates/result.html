@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Package</title>
+</head>
+<body style="background-image: url('https://lh5.googleusercontent.com/663iwvw4CAioll8Sdavftq7Rat4vtHQcFAG8IaZNTGbGSCjJCe_uCBpXYekTGWAfUy08ayGjnFFRZWAh99A51KwIF9Lp86lEluHANmqF1InCTfIWVBGVtVjbT5Ew_f-swA=w1280');  background-repeat: no-repeat;  background-size: cover; font-weight: bold; font-size: large;" ></body>
+    <h1 style="color: brown;text-align: center;">
+        Welcome to the Travel Package Prediction 
+    </h1>
+    <p style="text-align: center;color: blue;">
+        This will show that a customer will purchase a Package or Not.
+    </p>
+    <form action="/predict" method="post">
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="prefferedpropertystar">Preffered Property Stars</label>
+        <select name="prefferedpropertystar" id="prefferedpropertystar">
+            <option value=3>3.0 </option>
+            <option value=4>4.0 </option>
+            <option value=5>5.0</option>  
+            <option value=6>6.0</option> 
+        </select>
+        <br>
+        <br>
+        <label for="typeofcontact">Type of Contact</label>
+        <select name="typeofcontact" id="typeofcontact">
+            <option value="Self Enquiry"> Self Enquiry</option>
+            <option value="Company Invited">Company Invited </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="maritalstatus">Marital Status</label>
+        <select name="maritalstatus" id="maritalstatus">
+            <option value="Married">Married</option>
+            <option value="Unmarried">Unmarried </option>
+            <option value="Divorced">Divorced </option>
+            </select>
+        <br>
+        <br>
+        <label for="citytier">City Tier</label>
+        <select name="citytier" id="citytier">
+            <option value=1>1</option>
+            <option value=2>2 </option>
+            <option value=3>3 </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="numberoftrips">NumberOfTrips</label>
+        <select name="numberoftrips" id="numberoftrips">
+            <option value=1>1.0</option>
+            <option value=2>2.0 </option>
+            <option value=3>3.0 </option>
+            <option value=4>4.0 </option>
+            <option value=5>5.0</option>  
+            <option value=6>6.0</option>
+            <option value=7>7.0</option>
+            <option value=8>8.0</option>
+        </select>
+        <br>
+        <br>
+        <label for="durationofpitch">Duration Of Pitch</label>
+        <input type="number" name="durationofpitch" id="durationofpitch">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <label for="passport">PassPort</label>
+        <select name="passport" id="passport">
+            <option value=0>0</option>
+            <option value=1>1</option>
+        </select>
+        <br>
+        <br>
+        <label for="occupation">Occupation</label>
+        <select name="occupation" id="occupation">
+            <option value="Salaried">Salaried</option>
+            <option value="Small Business">Small Business </option>
+            <option value="Large Business">Large Business </option>
+            <option value="Free Lancer">Free Lancer </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <label for="pitchsatisfactionscore">Pitch Satisfaction Score</label>
+        <select name="pitchsatisfactionscore" id="pitchsatisfactionscore">
+            <option value=1>1</option>
+            <option value=2>2 </option>
+            <option value=3>3 </option>
+            <option value=4>4 </option>
+            <option value=5>5</option>   
+        </select>
+        <br>
+        <br>
+        <label for="gender">Gender</label>
+        <select name="gender" id="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="owncar">Own Car</label>
+        <select name="owncar" id="owncar">
+            <option value=0>0</option>
+            <option value=1>1</option>
+        </select>
+        <br>
+        <br>
+        <label for="numberofpersonvisiting">Number of Person Visiting</label>
+        <select name="numberofpersonvisiting" id="numberofpersonvisiting">
+            <option value=1>1</option>
+            <option value=2>2 </option>
+            <option value=3>3 </option>
+            <option value=4>4 </option>
+            <option value=5>5</option>   
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="numberofchildrenvisiting">Number of Children Visiting</label>
+        <select name="numberofchildrenvisiting" id="numberofchildrenvisiting">
+            <option value=0>0.0</option>
+            <option value=1>1.0</option>
+            <option value=2>2.0 </option>
+            <option value=3>3.0 </option>
+        </select>
+        <br>
+        <br>
+        <label for="numberoffollowups">Number of Follow Ups</label>
+        <select name="numberoffollowups" id="numberoffollowups">
+            <option value=1>1.0</option>
+            <option value=2>2.0 </option>
+            <option value=3>3.0 </option>
+            <option value=4>4.0 </option>
+            <option value=5>5.0</option>  
+            <option value=6>6.0</option> 
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;
+        <label for="designation">Designation</label>
+        <select name="designation" id="designation">
+            <option value="Manager">Manager</option>
+            <option value="Executive">Executive </option>
+            <option value="Senior Manager">Senior Manager</option>
+            <option value="AVP">AVP </option>
+            <option value="VP">VP </option>
+        </select>
+        <br>
+        <br>
+        <label for="productpitched">Product Pitched</label>
+        <select name="productpitched" id="productpitched">
+            <option value="Deluxe">Deluxe</option>
+            <option value="Basic">Basic </option>
+            <option value="Standard">Standard</option>
+            <option value="Super Deluxe">Super Deluxe </option>
+            <option value="King">King </option>
+        </select>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="monthlyincome">Monthly Income</label>
+        <input type="monthlyincome" name="monthlyincome" id="monthlyincome">
+        <br>
+        <br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="predict" style="color: brown;text-align: center;">SUBMIT DETAILS FOR PREDICTION</label>
+        <input type="submit" name="predict" id="predict" style="color: brown;text-align: center; font-weight: bold;">
+
+
+
+    </form>
+    <center>
+    <p style="color: blue;text-align: center;">
+       <h2><b> "Customer is Supposed to Be {{ res }} the Package."</b></h2>
+    </p></center>
+</body>
+</html>
